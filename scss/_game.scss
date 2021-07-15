@@ -1,0 +1,138 @@
+body {
+  .header {
+    margin: 0 auto;
+    width: 400px;
+    background-color: $color-white;
+    box-shadow: $shadow-black;
+    .title {
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+  background-color: bisque;
+  height: 100vh;
+  background: url(../images/drops.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-family;
+
+  .container {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+
+    .rules {
+      padding: 0;
+      margin-top: 0;
+      font-family: $font-family;
+      padding-bottom: 15px;
+      li {
+        list-style: none;
+      }
+    }
+
+    button {
+      padding: 20px 70px;
+      background-color: $color-primary;
+      color: $color-white;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .aside {
+    display: flex;
+    background-color: $color-white;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $shadow-black;
+    text-align: center;
+
+    h3 {
+      color: $color-primary;
+    }
+
+    // margin-left: 20%;
+    width: 200px;
+    img {
+      width: 150px;
+      height: 180px;
+      cursor: pointer;
+    }
+  }
+
+  .main {
+    width: 30%;
+    height: 300px;
+    box-shadow: $shadow-black;
+
+    background-color: $color-white;
+    margin-left: 150px;
+
+    .inner-main {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 22px;
+
+      img {
+        width: 150px;
+        height: 180px;
+        cursor: pointer;
+      }
+    }
+
+    .container-computer,
+    .container-player {
+      background-color: $color-white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-computer {
+      color: rgb(202, 38, 38);
+    }
+
+    .container-player {
+      color: $color-primary;
+    }
+  }
+
+  .rounds {
+    height: 550px;
+    width: 350px;
+    text-align: center;
+    background-color: $color-white;
+    box-shadow: $shadow-black;
+
+    h3 {
+      color: $color-primary;
+    }
+  }
+}
+
+a {
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 26px;
+  text-decoration: none;
+  background-color: $color-btn;
+  padding: 20px 40px;
+  color: $color-white;
+  box-shadow: $shadow-black;
+  border: 1px solid $color-white;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tools</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">Let's play!</h1>
+        <ul class="rules">
+          <li>Scissors beats a paper</li>
+          <li>Paper beats rock</li>
+          <li>Rock beats scissors</li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="flex">
+      <aside class="aside">
+        <h3>Options</h3>
+        <div class="images"></div>
+      </aside>
+
+      <main class="main">
+        <div class="inner-main">
+          <div class="container-computer">
+            <h2 class="computer">
+              Computer <span class="computer__score">0</span>
+            </h2>
+            <img src="." alt="computer" class="computer__img" />
+          </div>
+          <div class="container-player">
+            <h2 class="player">Player <span class="player__score">0</span></h2>
+            <img src="." alt="player" class="player__img" />
+          </div>
+        </div>
+      </main>
+
+      <div class="rounds">
+        <h3>Rounds</h3>
+        <div class="rounds__inner"></div>
+      </div>
+    </div>
+
+    <a href="#" id="reset">Reset</a>
+  </body>
+</html>
